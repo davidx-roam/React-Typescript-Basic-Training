@@ -1,33 +1,19 @@
-type RocketBases = "Earth" | "Mars" | "Moon";
-
+//DO NOT MODIFY
 interface CrewMember {
   name: string;
   role: "pilot" | "flight attendant" | "engineer";
 }
 
-interface RocketInfoProps {
+//DO NOT MODIFY
+interface LegacyRocketInfoProps {
   name: string;
   age: number;
   crew: CrewMember[];
 }
 
-interface RouteInfo {
-  name: string;
-  route: {
-    origin: RocketBases;
-    destination: RocketBases;
-  };
-}
+//TODO: Add typescript to this file
 
-interface RocketDepartureBoardProp {
-  rockets: Omit<RocketInfoProps, "age">[];
-  routeInfo: RouteInfo[];
-}
-
-const RocketDepartureBoard = ({
-  rockets,
-  routeInfo,
-}: RocketDepartureBoardProp) => {
+const RocketDepartureBoard = ({ rockets, routeInfo }) => {
   //TODO: Implement a departure board of three column
   // In the first column should be the rocket's name
   // In the second column should be the rocket's crew info
@@ -36,7 +22,7 @@ const RocketDepartureBoard = ({
 };
 
 export const Exercise8 = () => {
-  const rockets: Omit<RocketInfoProps, "age">[] = [
+  const rockets = [
     {
       name: "Roam 1",
       crew: [
@@ -60,7 +46,7 @@ export const Exercise8 = () => {
     },
   ];
 
-  const routeInfo: RouteInfo[] = [
+  const routeInfo = [
     {
       name: "Roam 1",
       route: {
@@ -86,7 +72,7 @@ export const Exercise8 = () => {
 
   return (
     <>
-      <h2>Exercise8</h2>
+      <h2>Exercise 8</h2>
       <RocketDepartureBoard rockets={rockets} routeInfo={routeInfo} />
     </>
   );

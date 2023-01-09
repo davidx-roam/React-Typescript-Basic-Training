@@ -1,16 +1,10 @@
-// Exercise 2 - Interfaces
-// Add typing to these components
-
+// TODO: Create a RocketInfoProps interface and use it in the code
 // Name should accept a parameter of string
 // ShowAge should accept a age parameter of number
 // Size could be any one of the three; "L", "M" and "S".
-interface RocketInfoProps {
-  name: string;
-  age: number;
-  size: "L" | "M" | "S";
-}
+interface RocketInfoProps {}
 
-const RocketInfo = ({ name, age, size }: RocketInfoProps) => (
+const RocketInfo = ({ name, age, size }) => (
   <>
     <ul>
       <li>

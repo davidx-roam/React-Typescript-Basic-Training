@@ -1,15 +1,11 @@
+// TODO: Create a RocketInfoProps interface and use it in the code
 // Name should accept a parameter of string
 // ShowAge should accept a age parameter of number
 // Size can be any one of the three; "L", "M" and "S"
 // Pilot is an object with first and last name
-interface RocketInfoProps {
-  name: string;
-  age: number;
-  size: "L" | "M" | "S";
-  pilot: { firstName: string; lastName: string };
-}
+interface RocketInfoProps {}
 
-const RocketInfo = ({ name, age, size, pilot }: RocketInfoProps) => (
+const RocketInfo = ({ name, age, size, pilot }) => (
   <>
     <ul>
       <li>

@@ -1,18 +1,5 @@
-// PilotInfo contains:
-// firstName which is a string
-// lastName which is a string
-interface PilotInfo {
-  firstName: string;
-  lastName: string;
-}
+// TODO: Create a RocketSizes interface and a PilotInfo
 
-// Rocketsize can be any one of the three; "L", "M" and "S"
-type RocketSizes = "L" | "M" | "S";
-
-// Name should accept a parameter of string
-// ShowAge should accept a age parameter of number
-// Size which is a Rocket Size
-// pilot which is a PilotInfo
 interface RocketInfoProps {
   name: string;
   age: number;

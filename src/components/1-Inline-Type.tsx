@@ -1,17 +1,17 @@
-// Add typing to these components inline
+// TODO: Add inline typing to these components inline
 
 // Name should accept a parameter of string
-const RocketName = ({ name }: { name: string }) => {
+const RocketName = ({ name }) => {
   return <label>Name: {name}</label>;
 };
 
 // ShowAge should accept a age parameter of number
-function RocketAge({ age }: { age: number }) {
+function RocketAge({ age }) {
   return <label>Age: {age}</label>;
 }
 
 // There are three sizes "L", "M" and "S". It could be any one of the three
-function RocketSize({ size }: { size: "L" | "M" | "S" }) {
+function RocketSize({ size }) {
   return <label>Size: {size}</label>;
 }
 
