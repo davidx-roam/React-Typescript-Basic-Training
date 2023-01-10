@@ -1,22 +1,17 @@
 // TODO: Modify the code so that on page load, the second custom input field receives focus
 // TODO: Add typescript to this file
 
-import { useEffect, useRef, forwardRef } from "react";
+import { useRef } from "react";
 
-const BeautifulInput = forwardRef<HTMLInputElement>((_, ref) => (
+const BeautifulInput = (ref) => (
   <>
     <label>Beautiful: </label>
-    <input ref={ref}></input>
+    <input></input>
   </>
-));
+);
 
 export const Exercise = () => {
-  const ref = useRef<HTMLInputElement>(null);
-  useEffect(() => {
-    if (ref.current) {
-      ref.current.focus();
-    }
-  }, []);
+  const ref = useRef(null);
   return (
     <>
       <h2>Exercise 16</h2>
@@ -25,7 +20,7 @@ export const Exercise = () => {
           <BeautifulInput></BeautifulInput>
         </li>
         <li>
-          <BeautifulInput ref={ref}></BeautifulInput>
+          <BeautifulInput></BeautifulInput>
         </li>
       </ul>
     </>
