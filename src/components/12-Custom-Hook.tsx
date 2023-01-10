@@ -2,17 +2,12 @@
 
 import React from "react";
 
-interface ClickableProps {
-  label: string;
-  handleClick: () => void;
-}
-
-const Clickable = ({ handleClick, label }: ClickableProps) => {
+const Clickable = ({ handleClick, label }) => {
   return <button onClick={handleClick}>{label}</button>;
 };
 
-const useCounter = (initialValue: number) => {
-  const [count, setCount] = React.useState<number>(initialValue);
+const useCounter = (initialValue) => {
+  const [count, setCount] = React.useState(initialValue);
   const increment = () => setCount(count + 1);
   const decrement = () => setCount(count - 1);
   return { count, increment, decrement };
