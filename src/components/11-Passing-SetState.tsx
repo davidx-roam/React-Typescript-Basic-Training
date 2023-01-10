@@ -2,13 +2,8 @@
 
 import React from "react";
 
-interface ClickableProps {
-  count: number;
-  setCount: React.Dispatch<React.SetStateAction<number>>;
-}
-
-const Clickable = ({ count, setCount }: ClickableProps) => {
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> = (e) => {
+const Clickable = ({ count, setCount }) => {
+  const handleClick = (e) => {
     console.log(e);
     setCount(count + 1);
   };
@@ -17,7 +12,7 @@ const Clickable = ({ count, setCount }: ClickableProps) => {
 };
 
 export const Exercise = () => {
-  const [count, setCount] = React.useState<number>(0);
+  const [count, setCount] = React.useState(0);
 
   return (
     <>
