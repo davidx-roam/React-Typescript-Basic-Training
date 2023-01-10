@@ -7,10 +7,7 @@ const Clickable = ({ handleClick, label }) => {
 };
 
 const useCounter = (initialValue) => {
-  const [count, setCount] = React.useState(initialValue);
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
-  return { count, increment, decrement };
+  //TODO: create a custom hook
 };
 
 export const Exercise = () => {
