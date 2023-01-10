@@ -1,3 +1,5 @@
+//TODO: Add Typescript to this file
+
 //DO NOT MODIFY
 interface CrewMember {
   name: string;
@@ -10,8 +12,6 @@ interface LegacyRocketInfoProps {
   age: number;
   crew: CrewMember[];
 }
-
-//TODO: Add typescript to this file
 
 const RocketDepartureBoard = ({ rockets, routeInfo }) => {
   //TODO: Implement a departure board of three column

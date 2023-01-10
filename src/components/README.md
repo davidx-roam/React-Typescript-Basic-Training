@@ -9,12 +9,13 @@ using Omit
 onclick handler
 useState
 passing setState
-onsubmit handler
-useEffect
-onClick - set focus onto field
-onSubmit - onSubmit as prop
-useRef - forwarding Refs
 custom hooks
+useReducer
+onsubmit handler
+useRef
+forwarding Refs
+
+onClick - set focus onto field
 context API
 Child props
 Generics
