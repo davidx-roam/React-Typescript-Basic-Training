@@ -13,7 +13,7 @@ export const Exercise = () => {
           <input></input>
         </li>
         <li>
-          <input ref={ref}></input>
+          <input></input>
         </li>
       </ul>
     </>
