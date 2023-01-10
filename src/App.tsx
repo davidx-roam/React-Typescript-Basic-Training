@@ -1,4 +1,4 @@
-import { Exercise1 } from "./components/1-Inline-Type";
+import { Exercise } from "./components/14-On-Submit";
 
 function App() {
   return (
@@ -6,7 +6,7 @@ function App() {
       <h1>React+Typescript Basic Training</h1>
       <ul>
         <li>
-          <Exercise1 />
+          <Exercise />
         </li>
       </ul>
     </div>
