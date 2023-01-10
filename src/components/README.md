@@ -4,13 +4,12 @@ Interfaces
 Optional Types
 Nested fields
 Reusing Interfaces
-
 using Omit
+
 onclick handler
-onsubmit handler
-useState basic
-useState advanced
+useState
 passing setState
+onsubmit handler
 useEffect
 onClick - set focus onto field
 onSubmit - onSubmit as prop
