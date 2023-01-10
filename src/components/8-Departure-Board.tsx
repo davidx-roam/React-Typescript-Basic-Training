@@ -1,15 +1,21 @@
-type RocketBases = "Earth" | "Mars" | "Moon";
+//TODO: Add Typescript to this file
 
+//DO NOT MODIFY
 interface CrewMember {
   name: string;
   role: "pilot" | "flight attendant" | "engineer";
 }
 
-interface RocketInfoProps {
+//DO NOT MODIFY
+interface LegacyRocketInfoProps {
   name: string;
   age: number;
   crew: CrewMember[];
 }
+
+type RocketInfoProps = Omit<LegacyRocketInfoProps, "age">;
+
+type RocketBases = "Earth" | "Mars" | "Moon";
 
 interface RouteInfo {
   name: string;
@@ -20,7 +26,7 @@ interface RouteInfo {
 }
 
 interface RocketDepartureBoardProp {
-  rockets: Omit<RocketInfoProps, "age">[];
+  rockets: RocketInfoProps[];
   routeInfo: RouteInfo[];
 }
 
@@ -36,7 +42,7 @@ const RocketDepartureBoard = ({
 };
 
 export const Exercise8 = () => {
-  const rockets: Omit<RocketInfoProps, "age">[] = [
+  const rockets: RocketInfoProps[] = [
     {
       name: "Roam 1",
       crew: [
