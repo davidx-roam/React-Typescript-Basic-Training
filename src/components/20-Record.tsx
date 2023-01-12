@@ -1,21 +1,16 @@
-// Exercise  -
-
-type SpacePortRecord = Record<string, string>;
-
+// TODO: complete the code so that it shows a list of rockets in the space port and their status.
 const SpacePort = () => {
-  const portRecord: SpacePortRecord = {
+  const portRecord = {
     "ROAM-1453": "landing",
     "ROAM-2765": "landed",
     "ROAM-2465": "onLaunchPad",
   };
 
-  const keys = Object.keys(portRecord);
-
   return (
     <div>
       <ul>
-        {keys.map((key) => {
-          const status = portRecord[key];
+        {Object.keys(portRecord).map((key) => {
+          const status = "";
           return (
             <li>
               <label>{`${key}-${status}`}</label>
@@ -23,7 +18,6 @@ const SpacePort = () => {
           );
         })}
       </ul>
-      <button>Add</button>
     </div>
   );
 };
