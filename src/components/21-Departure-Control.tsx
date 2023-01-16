@@ -32,14 +32,13 @@ interface ShipStatusProps {
 // As well a button to control its status. The button display 'approve', or 'prepare for departure' or 'launch'
 // depending on the ship's current status.
 const ShipStatus = ({ name, status, updateStatus }: ShipStatusProps) => {
-  const buttonText =
-    status === "requestLanding"
-      ? "approve"
-      : status === "landed"
-      ? "prepare for departure"
-      : status === "onLaunchPad"
-      ? "launch"
-      : "";
+  const statusTextMap: Record<Status, string> = {
+    requestLanding: "approve",
+    landed: "prepare for depature",
+    onLaunchPad: "launch",
+  };
+
+  const buttonText = statusTextMap[status];
 
   return (
     <li>
