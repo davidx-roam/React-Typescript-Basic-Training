@@ -1,18 +1,12 @@
 import { useState } from "react";
-
-interface FancyInputProp {
-  message?: string | ((value: string) => string);
-}
-
-export const FancyInput = ({ message }: FancyInputProp) => {
+export const FancyInput = ({ message }) => {
   const [value, setValue] = useState("");
 
   return (
     <>
       <input onChange={(e) => setValue(e.target.value)} value={value}></input>
-      {message && (
-        <p>{typeof message === "string" ? message : message(value)}</p>
-      )}
+      {/* TODO: modify the fancy button so it accepts either a string or a function as prop */}
+      <p>PLACEHOLDER</p>
     </>
   );
 };

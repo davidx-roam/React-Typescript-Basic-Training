@@ -1,6 +1,6 @@
 import { FancyInput } from "./components/FancyInput";
 
-const validate = (s: string) => {
+const validate = (s) => {
   const message =
     s.length === 0
       ? "I'm a very picky input"
