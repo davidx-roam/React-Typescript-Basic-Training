@@ -40,7 +40,6 @@ export const Exercise = () => {
   return (
     <div>
       <h2>Exercise 22</h2>
-      <Preview rocket={rocket} meal={meal} luggageSize={luggageSize} />
       <Select<RocketInfo>
         options={options.rockets}
         value={rocket}
@@ -56,6 +55,7 @@ export const Exercise = () => {
         value={luggageSize}
         onChange={setLuggageSize}
       />
+      <Preview rocket={rocket} meal={meal} luggageSize={luggageSize} />
       <button onClick={submitSelection}>Submit</button>
     </div>
   );

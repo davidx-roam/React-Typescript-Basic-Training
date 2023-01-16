@@ -17,13 +17,11 @@ export const Preview = ({ rocket, meal, luggageSize }: PreviewProps) => {
         </li>
         <li>
           <h4>{meal.label}</h4>
-          <p>{meal.calories}</p>
+          <p>{meal.calories} Calories</p>
         </li>
         <li>
           <h4>{luggageSize.label}</h4>
-          <p>
-            `${luggageSize.height} x ${luggageSize.width}
-          </p>
+          <p>{`${luggageSize.height}cm x ${luggageSize.width}cm`}</p>
         </li>
       </ul>
     </div>

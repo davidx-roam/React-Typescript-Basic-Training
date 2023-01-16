@@ -43,13 +43,13 @@ export const mockedResponse = {
       },
       {
         label: "Medium",
-        height: 40,
-        width: 50,
+        height: 50,
+        width: 60,
       },
       {
         label: "Large",
-        height: 40,
-        width: 50,
+        height: 70,
+        width: 80,
       },
     ],
   },
