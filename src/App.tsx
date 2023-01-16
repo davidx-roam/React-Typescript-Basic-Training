@@ -1,4 +1,4 @@
-import { Exercise } from "./components/22
+import { Exercise } from "./components/22-Depature-Booking/Exercise";
 
 function App() {
   return (
