@@ -31,7 +31,7 @@ export const useBookingState = () => {
       response.options.luggageSizes.find((l) => response.defaultLuggageSize)!
     );
     setOptions(response.options!);
-  });
+  }, []);
 
   const submitSelection = () => {
     console.log(rocket, meal, luggageSize);

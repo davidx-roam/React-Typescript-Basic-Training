@@ -20,7 +20,11 @@ export const Select = <T extends { label: string }>({
   return (
     <select onChange={handleChange} value={value.label}>
       {options.map(({ label }) => {
-        return <option value={label}>{label}</option>;
+        return (
+          <option value={label} key={label}>
+            {label}
+          </option>
+        );
       })}
     </select>
   );
