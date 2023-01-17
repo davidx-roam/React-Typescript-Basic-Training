@@ -1,4 +1,4 @@
-import { Exercise } from "./components/22-Depature-Booking/Exercise";
+import { Exercise } from "./components/25-Context";
 
 function App() {
   return (
