@@ -1,4 +1,4 @@
-import { Exercise } from "./components/16-ForwardRef";
+import { Exercise } from "./components/25-Context";
 
 function App() {
   return (
