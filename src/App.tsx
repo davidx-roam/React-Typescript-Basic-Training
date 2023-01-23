@@ -1,4 +1,4 @@
-import { Exercise } from "./components/27-Flex-Box";
+import { Exercise } from "./components/28-Nested-Flex";
 
 function App() {
   return (
